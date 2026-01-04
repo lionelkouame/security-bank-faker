@@ -11,10 +11,10 @@
 L'objectif est de simuler une banque en ligne exigeant des niveaux d'authentification variés et une gestion granulaire des permissions.
 
 ## 🛡️ Fonctionnalités de Sécurité Implémentées
-- [x] [cite_start]**User Management** : Entités sécurisées via `PasswordAuthenticatedUserInterface`[cite: 18, 62].
-- [x] [cite_start]**Robust Hashing** : Utilisation de l'algorithme `auto` (Argon2id/Bcrypt)[cite: 8, 65].
-- [ ] [cite_start]**Firewalls complexes** : Gestion de sessions et de tokens API[cite: 81, 152].
-- [ ] [cite_start]**Brute-force Protection** : Login Throttling intégré[cite: 209].
+- [ ] **User Management** :
+- [ ] **Robust Hashing** : Utilisation de l'algorithme `auto` (Argon2id/Bcrypt).
+- [ ] **Firewalls complexes** : Gestion de sessions et de tokens API.
+- [ ] **Brute-force Protection** : Login Throttling intégré.
 - [ ] **Voters Avancés** : Logique métier pour les virements bancaires.
 
 ## 🚀 Installation
