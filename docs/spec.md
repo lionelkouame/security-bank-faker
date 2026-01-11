@@ -44,18 +44,17 @@ Le provider "rafraîchit" l'utilisateur en interrogeant à nouveau la source de 
 Si une donnée critique (mot de passe, identifiant) a changé, l'utilisateur est déconnecté pour prévenir toute faille de sécurité.
 
 
-
 ---
 
 ## 3. Optimisation et Contrôle Avancé
 
 ### A. Comparaison Manuelle (`EquatableInterface`)
-* Description** : En implémentant cette interface dans l'entité `User`, vous remplacez la logique de comparaison par défaut de Symfony[cite: 413].
-* Cas d'usage** : Déconnecter manuellement un utilisateur si son niveau d'accréditation bancaire a été modifié durant sa session[cite: 414].
+* Description** : En implémentant cette interface dans l'entité `User`, vous remplacez la logique de comparaison par défaut de Symfony.
+* Cas d'usage** : Déconnecter manuellement un utilisateur si son niveau d'accréditation bancaire a été modifié durant sa session.
 
 ### B. Sécurisation de la Session (`__serialize`)
-* [cite_start]Pour ne pas stocker le hash du mot de passe en clair dans la session, il est recommandé d'implémenter la méthode magique `__serialize()`[cite: 403].
-* Stratégie CRC32c** : Stocker un hash `crc32c` du mot de passe dans la session permet de valider l'intégrité et d'invalider les sessions lors d'un changement de mot de passe sans exposer le hash principal[cite: 406, 408].
+* [cite_start]Pour ne pas stocker le hash du mot de passe en clair dans la session, il est recommandé d'implémenter la méthode magique `__serialize().
+* Stratégie CRC32c** : Stocker un hash `crc32c` du mot de passe dans la session permet de valider l'intégrité et d'invalider les sessions lors d'un changement de mot de passe sans exposer le hash principal.
 
----
+
 *Ce document technique est basé sur les standards de sécurité de Symfony 8.0.*

@@ -1,0 +1,38 @@
+mindmap
+  root((User Provider))
+    Sources de Données
+      Entity User Provider
+        Doctrine ORM
+        Identifiant unique Email
+        Clients et Personnel
+      Memory User Provider
+        Config security.yaml
+        Comptes d Urgence
+        Indépendant de la DB
+      LDAP User Provider
+        Annuaire Entreprise
+        Directeurs de Succursale
+      Chain User Provider
+        Système Hybride
+        Ordre de priorité
+      Custom User Provider
+        Service Externe
+        API Interbancaire
+    Cycle de Vie
+      Chargement Initial
+        Authentification Login
+        Remember Me
+        Impersonnalisation
+      Rafraîchissement
+        Début de requête
+        Désérialisation session
+        Vérification intégrité
+        Auto logout si changement
+    Contrôle Avancé
+      EquatableInterface
+        Comparaison manuelle
+        Logique métier complexe
+      Sécurisation Session
+        Méthode serialize
+        Stratégie CRC32c
+        Protection mot de passe
