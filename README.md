@@ -7,15 +7,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## 🎯 Objectifs du Projet
-Ce projet sert de fil rouge pour explorer 100% des capacités du **SecurityBundle** de Symfony[cite: 6].
+Ce projet sert de fil rouge pour explorer 100% des capacités du **SecurityBundle** de Symfony
 L'objectif est de simuler une banque en ligne exigeant des niveaux d'authentification variés et une gestion granulaire des permissions.
 
-## 🛡️ Fonctionnalités de Sécurité Implémentées
-- [ ] **User Management** :
-- [ ] **Robust Hashing** : Utilisation de l'algorithme `auto` (Argon2id/Bcrypt).
-- [ ] **Firewalls complexes** : Gestion de sessions et de tokens API.
-- [ ] **Brute-force Protection** : Login Throttling intégré.
-- [ ] **Voters Avancés** : Logique métier pour les virements bancaires.
+## Section : Les UserProviders
+- [📚 Deep Dive : Les Cas d'Usage du "User Provider"](docs/spec.md)
+- [providers..mermaid](docs/providers..mermaid)
 
 ## 🚀 Installation
 ```bash
